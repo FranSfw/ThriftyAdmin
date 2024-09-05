@@ -4,6 +4,12 @@
     font-weight: 600;
     color: #0F172A;
 }
+.topic {
+    font-family: Manrope; 
+    font-size: 24px; 
+    font-weight: 800;
+    color: #0F172A;
+}
 .link {
     font-family: Manrope; 
     font-size: 20px; 
@@ -26,7 +32,7 @@
     font-family: Manrope; 
     font-size: 20px; 
     font-weight: 600;
-    background-color: #0F172A;;
+    background-color: #0F172A;
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -50,4 +56,7 @@
     font-size: 20px; 
     font-weight: 300;
     color: #727782;
+}
+.input:focus {
+    color: #0F172A;
 }
