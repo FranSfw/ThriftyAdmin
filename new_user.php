@@ -20,7 +20,7 @@
   <div class="grid grid-cols-2 ">
     <div class="fixed w-full bg-white z-10">
       <div class="flex">
-        <a href="login_admin.html"><i class="title p-5 fa-sharp fa-solid fa-circle-arrow-left"></i></a>
+        <a href="login_admin.php"><i class="title p-5 fa-sharp fa-solid fa-circle-arrow-left"></i></a>
         <img src="img/Logo.jpg" width="160px" class="p-5" alt="Logo Thrifty" />
       </div>
     </div>

@@ -22,37 +22,54 @@
       <img src="img/Logo.jpg" width="160px" class="p-5" alt="Logo Thrifty" />
     </div>
     <div class="mx-12 content-center">
-      <h1 class="title">Log in</h1>
+      <h1 class="title">Administrator Log in</h1>
       <p class="subtitle mb-8">Welcome back!</p>
+
+
       <div class="relative z-0 w-full my-6 mx-auto group">
-        <input type="email" name="floating_email" id="floating_email"
+
+      <form action="validaradmin.php" method="POST">
+
+        <input type="email" name="user"
           class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
           placeholder="" required />
         <label for="floating_email"
           class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Email</label>
       </div>
       <div class="relative z-0 w-full my-6 mx-auto group">
-        <input type="password" name="floating_password" id="floating_password"
+        <input type="password" name="pswd"
           class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
           placeholder=" " required />
         <label for="floating_password"
           class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Password</label>
       </div>
       <button class="button">Log in</button>
+
+      </form>
+
       <div class="flex my-6">
         <hr width="40%" class="m-auto z-0">
         <div class="subsubtitle z-10 text-center top-10">or</div>
         <hr width="40%" class="m-auto z-0">
       </div>
-      <p class="text text-center">Are you an administrator? <a class="link hover:underline" href="login_admin.html">Log
-          In As Administrator</a></p>
+      <a href="new_user.php"><button class="button mb-6">Create New User</button></a>
+      <p class="text text-center">Are you an employee? <a class="link hover:underline" href="index.php">Log In As Employee</a></p>
     </div>
-    <div class="grid place-content-center ">
+    <div class=" grid place-content-center">
       <div class="h-screen ">
         <img class="rounded-3xl h-[92.5%] mt-[5%] opacity-80" src="img/Hero.jpg" alt="Conos de Nieve" />
       </div>
     </div>
   </div>
+  <?php
+  //validamos el warning
+  
+  if (!empty($_GET["error"]) && $_GET["error"] == 100) {
+
+    echo "Se ha detectado un acceso indebido";
+  }
+  ?>
+
 </body>
 
 </html>
