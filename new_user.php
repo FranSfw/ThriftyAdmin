@@ -24,7 +24,7 @@
         <img src="img/Logo.jpg" width="160px" class="p-5" alt="Logo Thrifty" />
       </div>
     </div>
-    <form class="mx-12 content-center mt-[72px]">
+    <div class="mx-12 content-center mt-[72px]">
       <h1 class="title">Create New Employee</h1>
       <p class="subtitle mb-8">Fields with an asterisk (<b class="mandatory">*</b>) are mandatory.</p>
       <div class="max-h-1/2">
@@ -170,7 +170,7 @@
         </div>
       </div>
       <button class="button mt-6 mb-12">Log in</button>
-    </form>
+    </div>
     <div class="grid">
       <div class="fixed h-screen z-20">
         <img class="rounded-3xl h-[92.5%] mt-[5%] opacity-80 ml-[22.2%]" src="img/Hero.jpg" alt="Conos de Nieve" />
