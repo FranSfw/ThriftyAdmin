@@ -37,13 +37,15 @@
         <label for="floating_password"
           class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Password</label>
       </div>
-      <button class="button">Log in</button>
+      <button class="button" name="accion" value="login">Log in</button>
       <div class="flex my-6">
         <hr width="40%" class="m-auto z-0">
         <div class="subsubtitle z-10 text-center top-10">or</div>
         <hr width="40%" class="m-auto z-0">
       </div>
-      <a href="new_user.php"><button class="button mb-6">Create New User</button></a>
+      <a href="new_user.php">
+        <button class="button mb-6" name="accion" value="create">Create New User</button>
+      </a>
       <p class="text text-center">Are you an employee? <a class="link hover:underline" href="index.php">Log In As
           Employee</a></p>
     </form>
@@ -57,10 +59,6 @@
     if (!empty($_GET["error"]) && $_GET["error"] == 100) {
       echo "Se ha detectado un acceso indebido";
     }
-    ?>
-    <?php
-    $current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    echo "La URL actual es: " . $current_url;
     ?>
 </body>
 

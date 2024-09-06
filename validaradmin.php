@@ -19,7 +19,15 @@ if (!empty($correo) || !empty($pswd)) {
             $_SESSION["validada"] = 1;
             $_SESSION["Nombre"] = $fila["nombre"] . " " . $fila["apellido1"] . " " . $fila["apellido2"];
             $_SESSION["correo"] = $fila["correo"];
-            header("Location:pageadmin.html");
+            $accion = $_POST['accion'];
+            switch ($accion) {
+                case 'login':
+                    header("Location:pageadmin.html");
+                    break;
+                case 'create':
+                    header("Location:new_user.php");
+                    break;
+            }
         } else {
             header("Location: login_admin.php?error=100");
         }
