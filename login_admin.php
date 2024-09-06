@@ -21,7 +21,7 @@
     <div class="absolute w-full bg-white">
       <img src="img/Logo.jpg" width="160px" class="p-5" alt="Logo Thrifty" />
     </div>
-    <div class="mx-12 content-center">
+    <form class="mx-12 content-center">
       <h1 class="title">Administrator Log in</h1>
       <p class="subtitle mb-8">Welcome back!</p>
 

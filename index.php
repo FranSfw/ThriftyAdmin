@@ -21,7 +21,7 @@
     <div class="absolute w-full bg-white">
       <img src="img/Logo.jpg" width="160px" class="p-5" alt="Logo Thrifty" />
     </div>
-    <div class="mx-12 content-center">
+    <form class="mx-12 content-center">
       <h1 class="title">Log in</h1>
       <p class="subtitle mb-8">Welcome back!</p>
       <div class="relative z-0 w-full my-6 mx-auto group">
@@ -57,7 +57,7 @@
       </div>
       <p class="text text-center">Are you an administrator? <a class="link hover:underline" href="login_admin.php">Log
           In As Administrator</a></p>
-    </div>
+      </form>
     <div class="grid place-content-center ">
       <div class="h-screen ">
         <img class="rounded-3xl h-[92.5%] mt-[5%] opacity-80" src="img/Hero.jpg" alt="Conos de Nieve" />
