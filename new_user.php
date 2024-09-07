@@ -30,79 +30,82 @@
       <div class="max-h-1/2">
         <h2 class="topic">General</h2>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+
+        <form action="create.php" method="POST">
+
+          <input type="text" name="name"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="first name"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">First
             Name<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="apellido"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="last name"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Last
             Name<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <select name="floating_email" id="floating_email"
+          <select name="gender"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required>
             <option value="" selected disabled>Select An Option</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="3">Not Specified</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="NotSpecified">Not Specified</option>
           </select>
-          <label for="floating_email"
+          <label for="gender"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Gender<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="date" name="floating_email" id="floating_email"
+          <input type="date" name="nacimiento"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="date of birth"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Date
             Of Birth<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="CURP"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="CURP"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">CURP<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="RFC"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="RFC"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">RFC<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="email" name="floating_email" id="floating_email"
+          <input type="email" name="email"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="email"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Email<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="email" name="floating_email" id="floating_email"
+          <input type="email" name="conemail"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="confirm email"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Confirm
             Email<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="phone"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="phone number"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Phone
             Number<b class="mandatory">*</b></label>
         </div>
@@ -110,67 +113,72 @@
       <div>
         <h2 class="topic">User Info</h2>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="email" name="floating_email" id="floating_email"
+          <input type="email" name="workemail"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="work email"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Personal
             Email<b class="mandatory">*</b></label>
         </div>
+ 
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="password" name="floating_password" id="floating_password"
+         <input type="password" name="password"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder=" " required />
-          <label for="floating_password"
+          <label for="password"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Password<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="password" name="floating_password" id="floating_password"
+          <input type="password" name="conpassword"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder=" " required />
-          <label for="floating_password"
+          <label for="confirm password"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Confirm
             Password<b class="mandatory">*</b></label>
         </div>
       </div>
+      
       <div>
         <h2 class="topic">Address</h2>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="address"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="address"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Address<b
               class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="type"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="type"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Apartment,
             Suite, Etc.<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="CP"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="postal code"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Postal
             Code<b class="mandatory">*</b></label>
         </div>
         <div class="relative z-0 w-full my-6 mx-auto group">
-          <input type="text" name="floating_email" id="floating_email"
+          <input type="text" name="city"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
             placeholder="" required />
-          <label for="floating_email"
+          <label for="city"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">City<b
               class="mandatory">*</b></label>
         </div>
       </div>
-      <button class="button mt-6 mb-12">Log in</button>
+      <button class="button mt-6 mb-12">Create User</button>
+
     </div>
+    </form>
+
     <div class="grid">
       <div class="fixed h-screen z-20">
         <img class="rounded-3xl h-[92.5%] mt-[5%] opacity-80 ml-[22.2%]" src="img/Hero.jpg" alt="Conos de Nieve" />
