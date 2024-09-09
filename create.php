@@ -58,21 +58,16 @@ VALUES ('$first_name', '$last_name', '$gender', '$date_of_birth', '$curp', '$rfc
 VALUES ('$work_email', '$password')";
 
 
-    if ($conn->query($sql1, ) === TRUE) {
+    if ($conn->query($sql1,) === TRUE) {
         echo "Nuevo empleado creado exitosamente";
 
-        if ($conn->query($sql2, ) === TRUE) {
+        if ($conn->query($sql2,) === TRUE) {
             echo "Nuevo empleado creado exitosamente";
             header("Location:new_user.php");
-
         } else {
             echo "Error: " . $sql1 . "<br>" . $conn->error;
         }
-
     }
-
-
-
 
     // Cerrar la conexión
     $conn->close();

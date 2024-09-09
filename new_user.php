@@ -70,7 +70,7 @@
         <div class="relative z-0 w-full my-6 mx-auto group">
           <input type="text" name="CURP" id="input_CURP"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
-            placeholder="" required />
+            placeholder="" minlength="18" maxlength="18" required />
           <label for="CURP"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">CURP<b
               class="mandatory">*</b></label>
@@ -78,7 +78,7 @@
         <div class="relative z-0 w-full my-6 mx-auto group">
           <input type="text" name="RFC" id="input_RFC"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
-            placeholder="" required />
+            placeholder="" minlength="13" maxlength="13" required />
           <label for="RFC"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">RFC<b
               class="mandatory">*</b></label>
@@ -102,7 +102,7 @@
         <div class="relative z-0 w-full my-6 mx-auto group">
           <input type="text" name="phone" id="input_phone"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
-            placeholder="" required />
+            placeholder="" minlength="10" maxlength="10" required />
           <label for="phone number"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Phone
             Number<b class="mandatory">*</b></label>
@@ -158,7 +158,7 @@
         <div class="relative z-0 w-full my-6 mx-auto group">
           <input type="text" name="CP" id="input_postal_code"
             class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
-            placeholder="" required />
+            placeholder="" required minlength="5" maxlength="5"/>
           <label for="postal code"
             class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Postal
             Code<b class="mandatory">*</b></label>
