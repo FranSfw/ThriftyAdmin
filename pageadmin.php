@@ -18,7 +18,8 @@
 <body>
     <header class="flex h-20 overflow-hidden justify-between">
         <img src="img/Logo.jpg" class="p-5 h-full" alt="">
-        <div class="p-4 flex items-center"> <!-- perfil actual -->
+        <div class="p-4 flex items-center">
+            <!-- perfil actual -->
             <img src="img/Gato.jpg" class="h-full rounded-full" alt="">
             <div class="px-2">
                 <p class="font-medium">Oreo</p>
@@ -32,54 +33,95 @@
             <div class=" ml-5 w-5/6 grid place-content-start bg-[#EF3826] rounded-lg p-2 text-white"><a
                     href="pageadmin.html"><i class="fa-solid fa-table w-6"></i> Dashboard</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
                 <a href="pageadmin.html"><i class="fa-solid fa-file-import w-6"></i> BackUp</a></div>
             <hr>
             <h2 class="px-4 pt-2 text-xs ">Documents</h2>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
                 <a href="pageadmin.html" class=""><i class="fa-solid fa-file-circle-exclamation w-6"></i> Adm.
-                    Record</a>
-            </div>
+                    Record</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-contract w-6"></i> Contract</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-contract w-6"></i> Contract</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-circle-xmark w-6"></i> Waiver</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-circle-xmark w-6"></i> Waiver</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
                 <a href="pageadmin.html" class=""><i class="fa-solid fa-file-certificate w-6"></i> Emp. Certificate</a>
             </div>
             <hr>
             <h2 class="px-4 pt-2 text-xs ">Tables</h2>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-users w-6"></i> Employees</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-solid fa-users w-6"></i> Employees</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-regular fa-list w-6"></i> User</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-regular fa-list w-6"></i> User</a></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-chart-simple w-6"></i> Log</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-solid fa-chart-simple w-6"></i> Log</a></div>
             <hr>
             <div class="flex"></div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a>
-            </div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
+                <a href="pageadmin.html" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a></div>
         </div>
-        <div class=" bg-[#F5F6FA] grid place-content-center" style="grid-column: 2/6 ">
-
+        <div class=" bg-[#F5F6FA]" style="grid-column: 2/6 ">
+            <h1>Dashboard </h1>
+            <div class="grid grid-cols-4 gap-2 m-5">
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                    <div>
+                        <h2 class="text-xs">Total Employees</h2>
+                        <h1 class="text-3xl">100</h1>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#e5e4ff]">
+                            <i class="fa-duotone fa-solid fa-users"
+                                style="--fa-primary-color: #8280ff; --fa-secondary-color: #aba9ff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                    <div>
+                        <h2 class="text-xs">Total Employees</h2>
+                        <h1 class="text-3xl">100</h1>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#c9f0ea]">
+                            <i class="fa-duotone fa-solid fa-users"
+                                style="--fa-primary-color: #00b69b; --fa-secondary-color: #53cebc;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                    <div>
+                        <h2 class="text-xs">Total Employees</h2>
+                        <h1 class="text-3xl">100</h1>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#fcd5d1]">
+                            <i class="fa-duotone fa-solid fa-users"
+                                style="--fa-primary-color: #ef3826; --fa-secondary-color: #f4796c;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                    <div>
+                        <h2 class="text-xs">Total Employees</h2>
+                        <h1 class="text-3xl">100</h1>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="grid place-content-center rounded-xl w-12 h-12  bg-[#dcdcdc]">
+                            <i class="fa-duotone fa-solid fa-users fa-lg"
+                                style="--fa-primary-color: #565656; --fa-secondary-color: #8d8d8d;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-<script>
-    
-</script>
+
 </html>
