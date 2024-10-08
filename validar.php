@@ -5,11 +5,11 @@ if (empty($_POST)) {
 // Añadimos clases de validacion recicladas
 include('C:/xampp/htdocs/ThriftyAdmin/config.php');
 include('C:/xampp/htdocs/ThriftyAdmin/consultas.php');
-$correo = $_POST["user"];
-$pswd = $_POST["pswd"];
-if (!empty($correo) || !empty($pswd)) {
-    #$query = "SELECT correo, pswd FROM usuario WHERE correo = $correo AND pswd = "  . "MD5(" . "'" . $pswd . "'" . ");";
-    $query = "SELECT correo, pswd FROM usuario WHERE correo = '$correo' AND pswd = $pswd;";
+$correo = $_POST["correo"];
+$password = $_POST["password"];
+if (!empty($correo) || !empty($password)) {
+    #$query = "SELECT correo, password FROM usuario WHERE correo = $correo AND password = "  . "MD5(" . "'" . $password . "'" . ");";
+    $query = "SELECT datos_empleado.correo, datos_empleado.password FROM datos_empleado WHERE datos_empleado.correo = '$correo' AND datos_empleado.password = '$password';";
     conectar();
     $resultado = mysqli_query(conectar(), $query) or die("No me conecté");
     $fila = mysqli_fetch_assoc($resultado);
