@@ -24,14 +24,14 @@
       <h1 class="title">Administrator Log in</h1>
       <p class="subtitle mb-8">Welcome back!</p>
       <div class="relative z-0 w-full my-6 mx-auto group">
-        <input type="email" name="user" id="input_email"
+        <input type="email" name="correo" id="input_email"
           class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
           placeholder="" required />
         <label for="floating_email"
           class="input peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#0F172A] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-1 peer-focus:scale-75 peer-focus:-translate-y-8 pl-2">Email</label>
       </div>
       <div class="relative z-0 w-full my-6 mx-auto group">
-        <input type="password" name="pswd" id="input_password"
+        <input type="password" name="password" id="input_password"
           class="input block py-2.5 px-0 w-full bg-transparent border-2 rounded-lg border-[#727782] appearance-none focus:outline-none focus:ring-0 focus:border-[#0F172A] peer"
           placeholder=" " required />
         <label for="floating_password"
