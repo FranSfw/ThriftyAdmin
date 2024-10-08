@@ -1,29 +1,47 @@
 <?php
 if (empty($_POST)) {
-    header("Location:index.php?error=300");
+    header("Location: login_admin.php?error=300");
+    exit;
 }
-// Añadimos clases de validacion recicladas
-include('C:/xampp/htdocs/ThriftyAdmin/config.php');
-include('C:/xampp/htdocs/ThriftyAdmin/consultas.php');
+include('config.php');
+include('consultas.php');
 $correo = $_POST["correo"];
 $password = $_POST["password"];
-if (!empty($correo) || !empty($password)) {
-    #$query = "SELECT correo, password FROM usuario WHERE correo = $correo AND password = "  . "MD5(" . "'" . $password . "'" . ");";
-    $query = "SELECT datos_empleado.correo, datos_empleado.password FROM datos_empleado WHERE datos_empleado.correo = '$correo' AND datos_empleado.password = '$password';";
-    conectar();
-    $resultado = mysqli_query(conectar(), $query) or die("No me conecté");
-    $fila = mysqli_fetch_assoc($resultado);
-    if ($resultado->num_rows == 1) {
-        session_start();
-        $_SESSION["validada"] = 1;
-        $_SESSION["Nombre"] = $fila["nombre"] . " " . $fila["apellido1"] . " " . $fila["apellido2"];
-        $_SESSION["correo"] = $fila["correo"];
-        header("Location:page.html");
+if (!empty($correo) && !empty($password)) {
+    $connection = conectar();
+    $correo = mysqli_real_escape_string($connection, $correo);
+    $password = mysqli_real_escape_string($connection, $password);
+    $query = "SELECT *
+              FROM datos_empleado 
+              WHERE `correo` = '$correo' 
+              AND `password` = '$password';";
+    $resultado = mysqli_query($connection, $query);
+    if ($resultado && mysqli_num_rows($resultado) == 1) {
+        $fila = mysqli_fetch_assoc($resultado);
+        if ($fila['estatus'] == 'Activo') {
+            if ($fila['puesto'] == 'Gerente de sucursal' ||
+                $fila['puesto'] == 'Supervisor de operaciones' ||
+                $fila['puesto'] == 'Gerente de operaciones' ||
+                $fila['puesto'] == 'Asistente de gerencia') {
+                header("Location: pageadmin.php");
+                exit;
+            } elseif ($fila['puesto'] == 'Cajero' ||
+                $fila['puesto'] == 'Mostrador' ||
+                $fila['puesto'] == 'Ayudante de almacén') {
+                header("Location: page.php");
+                exit;
+            }
+        } else {
+            header("Location: login_admin.php?error=400");
+            exit;
+        }
     } else {
-        header("Location: index.php?error=100");
+        header("Location: login_admin.php?error=100");
+        exit;
     }
     mysqli_close($connection);
 } else {
-    header("Location:index.php?error=200");
+    header("Location: login_admin.php?error=200");
+    exit;
 }
 ?>
