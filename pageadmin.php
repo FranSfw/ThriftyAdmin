@@ -19,7 +19,6 @@
     <header class="flex h-20 overflow-hidden justify-between">
         <img src="img/Logo.jpg" class="p-5 h-full" alt="">
         <div class="p-4 flex items-center">
-            <!-- perfil actual -->
             <img src="img/Gato.jpg" class="h-full rounded-full" alt="">
             <div class="px-2">
                 <p class="font-medium">Oreo</p>
@@ -31,40 +30,49 @@
     <div class="grid grid-cols-5 h-full -z-10">
         <div class="flex flex-col mt-4 gap-1">
             <div class=" ml-5 w-5/6 grid place-content-start bg-[#EF3826] rounded-lg p-2 text-white"><a
-                    href="pageadmin.html"><i class="fa-solid fa-table w-6"></i> Dashboard</a></div>
-            <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html"><i class="fa-solid fa-file-import w-6"></i> BackUp</a></div>
+                    href="pageadmin.php"><i class="fa-solid fa-table w-6"></i> Dashboard</a></div>
+            <div class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200"
+                id="backup">
+                <p><i class="fa-solid fa-file-import w-6"></i> BackUp</p>
+            </div>
             <hr>
             <h2 class="px-4 pt-2 text-xs ">Documents</h2>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-circle-exclamation w-6"></i> Adm.
-                    Record</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-file-circle-exclamation w-6"></i> Adm.
+                    Record</a>
+            </div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-contract w-6"></i> Contract</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-file-contract w-6"></i> Contract</a>
+            </div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-circle-xmark w-6"></i> Waiver</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-file-circle-xmark w-6"></i> Waiver</a>
+            </div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-file-certificate w-6"></i> Emp. Certificate</a>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-file-certificate w-6"></i> Emp. Certificate</a>
             </div>
             <hr>
             <h2 class="px-4 pt-2 text-xs ">Tables</h2>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-users w-6"></i> Employees</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-users w-6"></i> Employees</a>
+            </div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-regular fa-list w-6"></i> User</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-regular fa-list w-6"></i> User</a>
+            </div>
             <div
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-chart-simple w-6"></i> Log</a></div>
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-chart-simple w-6"></i> Log</a>
+            </div>
             <hr>
             <div class="flex"></div>
             <div
+                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
+                <a href="pageadmin.php" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a>
                 class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
                 <a href="pageadmin.html" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a></div>
         </div>
@@ -123,5 +131,5 @@
         </div>
     </div>
 </body>
-
+<script src="functions.js"></script>
 </html>
