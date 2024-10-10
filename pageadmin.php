@@ -12,10 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit.fontawesome.com/ec46b80c81.css" crossorigin="anonymous" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <?php
+    include "consultas.php";
+    ?>
     <title>Document</title>
 </head>
 
-<body>
+<body class="h-screen">
     <header class="flex h-20 overflow-hidden justify-between">
         <img src="img/Logo.jpg" class="p-5 h-full" alt="">
         <div class="p-4 flex items-center">
@@ -73,52 +76,70 @@
             <div
                 class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200">
                 <a href="pageadmin.php" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a>
-                class=" ml-5 w-5/6 grid place-content-start hover:bg-[#EF3826] rounded-lg p-2 hover:text-white duration-200 ">
-                <a href="pageadmin.html" class=""><i class="fa-solid fa-left-from-bracket w-6"></i> Log out</a></div>
+            </div>
         </div>
         <div class=" bg-[#F5F6FA]" style="grid-column: 2/6 ">
-            <h1>Dashboard </h1>
             <div class="grid grid-cols-4 gap-2 m-5">
                 <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
                     <div>
                         <h2 class="text-xs">Total Employees</h2>
-                        <h1 class="text-3xl">100</h1>
+                        <h1 class="text-3xl">
+                            <?php
+                            $usuarios = mostrarUsuarios();
+                            echo $usuarios;
+                            ?>
+                        </h1>
                     </div>
                     <div class="flex justify-end">
-                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#e5e4ff]">
-                            <i class="fa-duotone fa-solid fa-users"
+                        <div class="grid place-content-center rounded-xl w-12 h-12  bg-[#e5e4ff]">
+                            <i class="fa-duotone fa-solid fa-users fa-lg"
                                 style="--fa-primary-color: #8280ff; --fa-secondary-color: #aba9ff;"></i>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2 overflow-hidden">
                     <div>
-                        <h2 class="text-xs">Total Employees</h2>
-                        <h1 class="text-3xl">100</h1>
+                        <h2 class="text-xs">Total Usuarios Activos</h2>
+                        <h1 class="text-3xl">
+                            <?php
+                            $usuarios = mostrarActivo();
+                            echo $usuarios;
+                            ?>
+                        </h1>
                     </div>
                     <div class="flex justify-end">
-                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#c9f0ea]">
-                            <i class="fa-duotone fa-solid fa-users"
+                        <div class="grid place-content-center rounded-xl w-12 h-12 bg-[#c9f0ea]">
+                            <i class="fa-duotone fa-solid fa-users fa-lg"
                                 style="--fa-primary-color: #00b69b; --fa-secondary-color: #53cebc;"></i>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
                     <div>
-                        <h2 class="text-xs">Total Employees</h2>
-                        <h1 class="text-3xl">100</h1>
+                        <h2 class="text-xs">Total Usuarios En Baja</h2>
+                        <h1 class="text-3xl">
+                            <?php
+                            $usuarios = mostrarBaja();
+                            echo $usuarios;
+                            ?>
+                        </h1>
                     </div>
                     <div class="flex justify-end">
-                        <div class="grid place-content-center rounded-xl w-8 h-8  bg-[#fcd5d1]">
-                            <i class="fa-duotone fa-solid fa-users"
+                        <div class="grid place-content-center rounded-xl w-12 h-12  bg-[#fcd5d1]">
+                            <i class="fa-duotone fa-solid fa-users fa-lg"
                                 style="--fa-primary-color: #ef3826; --fa-secondary-color: #f4796c;"></i>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2">
+                <div class="bg-white p-4 rounded-lg grid place-content-between grid-cols-2 overflow-hidden">
                     <div>
-                        <h2 class="text-xs">Total Employees</h2>
-                        <h1 class="text-3xl">100</h1>
+                        <h2 class="text-xs">Total Usuarios En Lista Negra</h2>
+                        <h1 class="text-3xl">
+                            <?php
+                            $usuarios = mostrarListaNegra();
+                            echo $usuarios;
+                            ?>
+                        </h1>
                     </div>
                     <div class="flex justify-end">
                         <div class="grid place-content-center rounded-xl w-12 h-12  bg-[#dcdcdc]">
@@ -132,4 +153,5 @@
     </div>
 </body>
 <script src="functions.js"></script>
+
 </html>

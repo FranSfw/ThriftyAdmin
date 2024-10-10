@@ -35,6 +35,7 @@
     $phone_number = $_POST['phone'];
     $work_email = $_POST['workemail'];
     $password = $_POST['password'];
+    $hash_bcrypt = password_hash($password, PASSWORD_BCRYPT);
     $confirm_password = $_POST['conpassword'];
     $address = $_POST['address'];
     $type = $_POST['type'];
